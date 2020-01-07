@@ -1,0 +1,7 @@
+body {
+  background-color: beige;
+}
+/* Tabellen är stylad så att det är lätt att debug'a, inte färdigt alltså*/
+table, th, td {
+   border: 1px solid black;
+}

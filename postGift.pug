@@ -1,0 +1,28 @@
+doctype html
+html
+    head
+        title="Hitta din julklapp"
+
+        style
+          include style.css
+
+    body
+    
+      form(action='/post', method='postGift')
+        p
+        | name:
+        br 
+        input(type='text', name='name', value='')
+        br
+        | image:
+        br 
+        input(type='file', name='image', value='')
+        br
+        | link:
+        br 
+        input(type='url', name='link', value='')
+        br
+      input(type='submit', value='Submit')  
+      br
+      
+        p=messsage

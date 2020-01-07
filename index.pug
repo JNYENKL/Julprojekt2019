@@ -1,0 +1,35 @@
+doctype html
+html
+    head
+        title="Hitta din julklapp"
+
+        style
+          include style.css
+//Body starts here
+    body
+      a(href='/gift' method="GET") find gift 
+      br
+      a(href='/post' method="GET") post
+      br
+      p=errorMessage
+      
+      //Render all items in the db
+      if itemList.length > 0
+        table
+          for items in itemList
+            tr
+              td=items.name
+              td
+                img.images(src='../images/'+ items.image_name, alt='image_name')
+              td
+                a.links(href=items.link) link
+
+  				
+        
+      
+          
+  				
+  					
+  				
+        
+      
