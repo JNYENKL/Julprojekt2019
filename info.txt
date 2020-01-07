@@ -1,0 +1,6 @@
+Database specifications used in app.js:
+
+host: 'localhost',
+user: 'root',
+password: '',
+database: 'testJul'
